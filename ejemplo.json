@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": ["Bash(npm run *)", "Bash(python3 *)", "Bash(git * main)", "WebFetch"],
+    "deny": ["Bash(curl *)", "Write(./secrets/**)"]
+  },
+  "enableAllProjectMcpServers": true,
+  "env": { "STRIPE_SECRET_KEY": "sk_test_1234567890" }
+}

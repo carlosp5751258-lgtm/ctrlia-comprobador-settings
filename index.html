@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprobador de settings.json de Claude Code · Ctrl+IA</title>
+</head>
+<body>
+<main>
+<h1>Comprobador de settings.json de Claude Code</h1>
+<!-- Formulario del comprobador (sin código en línea). El JS está en comprobador.js. -->
+<label for="cs-ambito">¿De qué archivo es?</label>
+<select id="cs-ambito">
+  <option value="proyecto">.claude/settings.json (proyecto, se sube a git)</option>
+  <option value="local">.claude/settings.local.json (local)</option>
+  <option value="usuario">~/.claude/settings.json (usuario)</option>
+</select>
+<label for="cs-texto">Pega tu archivo</label>
+<textarea id="cs-texto" rows="16" spellcheck="false" autocomplete="off"></textarea>
+<button id="cs-analizar" type="button">Comprobar</button>
+<ul id="cs-resultado" aria-live="polite"></ul>
+<p>El análisis ocurre en tu navegador: el texto no sale de tu equipo. Aun así, quita claves antes de pegar.</p>
+<script src="comprobador.js" defer></script>
+</main>
+</body>
+</html>
