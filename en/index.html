@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code settings.json checker · Ctrl+IA</title>
+</head>
+<body>
+<main>
+<h1>Claude Code settings.json checker</h1>
+<!-- Checker form (no inline code). The JS is in checker.js. -->
+<label for="cs-scope">Which file is it?</label>
+<select id="cs-scope">
+  <option value="project">.claude/settings.json (project, committed to git)</option>
+  <option value="local">.claude/settings.local.json (local)</option>
+  <option value="user">~/.claude/settings.json (user)</option>
+</select>
+<label for="cs-text">Paste your file</label>
+<textarea id="cs-text" rows="16" spellcheck="false" autocomplete="off"></textarea>
+<button id="cs-check" type="button">Check</button>
+<ul id="cs-result" aria-live="polite"></ul>
+<p>The analysis happens in your browser: the text never leaves your machine. Even so, remove keys before pasting.</p>
+<script src="checker.js" defer></script>
+</main>
+</body>
+</html>

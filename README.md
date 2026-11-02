@@ -1,5 +1,7 @@
 # ctrlia-comprobador-settings
 
+English version: [README.en.md](README.en.md) (archivos en `en/`).
+
 Comprobador de **settings.json de Claude Code**. Pegas un `.claude/settings.json`, `~/.claude/settings.json` o `settings.local.json`, eliges de qué archivo es (usuario, proyecto o local) y te marca cada riesgo de permisos por nivel (crítico, alto, medio, bajo, info), con la explicación en español y el enlace a la documentación oficial que lo respalda. 21 reglas, todas con pruebas.
 
 Todo ocurre en el navegador: sin servidor, sin `fetch`, sin almacenamiento y sin dependencias. El JSON se lee con `JSON.parse` (nunca `eval`) y los resultados se pintan con `textContent`.
